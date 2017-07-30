@@ -16,7 +16,7 @@ var animal = document.getElementsByName("animal")[0].value;
 //what to do if an animal name button is clicked
 function gifDisplay(clickedName){
 	if(appended === 0){
-		$("#panelHead").append('<p id="gifText">Click the picture to animate, click again to stop, enjoy!</p>');
+		$("#panelHead").append('<p id="gifText"><strong>Click the picture to animate, click again to stop, enjoy!</strong></p>');
 		appended = 1;
 	}
 	//set up our api

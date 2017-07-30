@@ -1,9 +1,6 @@
-body{
 
-}
-
-.jumbotron{
-	background-color: #337ab7;
+#header{
+	color: #337ab7;
 	font-family: 'merriweather', serif;
 }
 
@@ -15,8 +12,7 @@ body{
 button{
 	background-color: #337ab7;
 	color: white;
-	border-radius: 15px;
-	width:50px;	
+	border-radius: 15px;	
 }
 
 #submitButton{
@@ -45,4 +41,23 @@ button{
 
 button:hover{
 	border:solid black;
+}
+
+#footer{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	background-color:#666666;
+	color:white;
+	margin-top:30px;
+	border-top-style:solid;
+	border-color:#337ab7;
+	border-radius: 10px;
+	border-width:5px;
+	padding:15px;
+}
+
+.footerVerbiage{
+	font-size: 12px;
+	font-style: italic;
 }
