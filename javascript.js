@@ -18,6 +18,7 @@ function gifDisplay(clickedName){
 	//set up our api
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         clickedName + "&api_key=dc6zaTOxFJmzC&limit=12";
+        console.log(queryURL);
       $.ajax({
           url: queryURL,
           method: "GET"
