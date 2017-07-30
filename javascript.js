@@ -1,5 +1,6 @@
 //declare global variables
 var buttonNum = 0;
+var appended = 0;
 
 //What to do after an animal is submitted
 $('#animalFinder').submit(function () {
@@ -14,7 +15,10 @@ var animal = document.getElementsByName("animal")[0].value;
 
 //what to do if an animal name button is clicked
 function gifDisplay(clickedName){
-	$("#gifDisplay").html("Click the picture to animate, click again to stop, enjoy!");
+	if(appended === 0){
+		$("#panelHead").append('<p id="gifText">Click the picture to animate, click again to stop, enjoy!</p>');
+		appended = 1;
+	}
 	//set up our api
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         clickedName + "&api_key=dc6zaTOxFJmzC&limit=12";
@@ -27,6 +31,7 @@ function gifDisplay(clickedName){
         .done(function(response) {
         	console.log(response);
           var results = response.data;
+          $("#gifDisplay").html("");
           //loop through 12 gifs
           for (var i = 0; i < 12; i++) {
           	//for every 3 gifs start a new row
