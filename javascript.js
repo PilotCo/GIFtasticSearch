@@ -16,7 +16,7 @@ var animal = document.getElementsByName("animal")[0].value;
 function gifDisplay(clickedName){
 	$("#gifDisplay").html("Click the picture to animate, click again to stop, enjoy!");
 	//set up our api
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         clickedName + "&api_key=dc6zaTOxFJmzC&limit=12";
       $.ajax({
           url: queryURL,
