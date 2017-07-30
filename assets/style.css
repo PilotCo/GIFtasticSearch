@@ -1,0 +1,27 @@
+body{
+	
+}
+
+.jumbotron{
+	background-color: #337ab7;
+	font-family: 'merriweather', serif;
+}
+
+#gifDisplay{
+	text-align: center;
+
+}
+
+button{
+	background-color:lightblue;
+	border-radius: 15px;
+}
+
+#submitButton{
+	border-radius: 15px;
+}
+
+#animalButton{
+	margin-right: 10px;
+	margin-bottom: 10px
+}
